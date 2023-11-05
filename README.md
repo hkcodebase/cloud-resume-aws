@@ -1,2 +1,3 @@
 # cloud-resume-aws
-this is repository for cloud resume on aws
+This repository has code for cloud resume as per this article - https://cloudresumechallenge.dev/docs/the-challenge/aws/
+
