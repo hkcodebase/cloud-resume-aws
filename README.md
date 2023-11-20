@@ -16,3 +16,6 @@ This repository has code for cloud resume as per challenge and steps in this art
 ### 4. Static Website on AWS S3
 - [Resume URL over S3](http://hk-cloud-resume.s3-website-us-east-1.amazonaws.com/)
 - [Steps to create it](https://github.com/hkcodebase/path-aws/blob/main/s3/cloud-resume.md)
+
+### 5. HTTPS
+- [Resume over CloudFront](https://d371yj7u2esz45.cloudfront.net/)
