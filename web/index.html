@@ -5,58 +5,171 @@
   <title>Cloud Resume - Hemant</title>
   <style>
     body {
-      background-color: rgb(215, 225, 228);
+      background-color: rgb(239, 244, 245);
+      font-family: verdana;
     }
     
     h1 {
       color: rgb(7, 5, 5);
       text-align: center;
+      font-size: 45px;
     }
     
     p {
-      font-family: verdana;
       font-size: 30px;
     }
+
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #b4b6c1;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 12px 24px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    .tab button.active {
+      background-color: #928d8d;
+    }
+
     </style>
 
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
 </head>
 
 <body>
-  <h1> Hemant Kumar</h1>
-  <p> I am a Software Engineer with 13+ years of experience in designing and developing systems. </p>
-  <hr />
-  <h3> Professional experience</h3>
-  <ol>
-    <li> Working as Software Engineer III for JPMorgan & Chase Co. in NYC, USA <em> May 2023 - Present </em> 
-      <ul>
-        <li>
-          Developing High availability APIs using Java, Springboot, AWS SDK
-        </li>
-        <li>
-          Deploying APIs in EKS and ECS using Jenkins and Spinnaker
-        </li>
-        <li>
-          Managing Infrastructure using Terraform
-        </li>
-        <li>
-          Observability using Datadog, Insights over log data in S3 using Athena
-        </li>
-      </ul>
-    
-    </li>
-    <li>Worked as Senior Consultant-Technology for Calance in India & USA From July 2018 to May 2023</li>
-    <li>Worked as Senior Software Engineer for HTC Global Services in India From April 2015 to Jun 2018</li>
-    <li>Worked as Analyst Programmer for Decathlon Sports India From Jan 2014 to Mar 2015</li>
-    <li>Worked as Software Engineer for iGATE Global Solutions, India From Sep 2010 to Dec 2013</li>
-  </ol>
 
-  <hr />
-  <h3> Technical Stack</h3>
-  <ul>
-    <li> Programming Languages - Java, Groovy, Python, Javascript</li>
-    <li> Frameworks & Web Technologies - Springboot, Hibernate, Microservices </li>
-    <li> DevOps Tools - Docker, Jenkins, Kubernetes, AWS EKS/ECS, Kafka </li>
-  </ul>
+  <h1> Hemant Kumar </h1>  
+  <p align="center">
+    <a href="https://github.com/hkcodebase"><img src="github.svg"/></a>
+    <nbsp/>
+    <a href="https://twitter.com/hey_mant"><img src="twitter.svg"/></a>
+    <nbsp/>
+    <a href="https://www.linkedin.com/in/hemantk01"><img src="linkedin.svg"/></a>
+  </p>
+  <p align="center"> Software Engineer III @JPMorgan & Chase with experience of 13+ years in designing and developing software systems  </p>
+
+  <div class="tab">
+    <button class="tablinks active" style="display: block;" onclick="openTab(event, 'experience')">Experience</button>
+    <button class="tablinks" onclick="openTab(event, 'techstack')">Technical Stack</button>
+    <button class="tablinks" onclick="openTab(event, 'projects')">Projects</button>
+    <button class="tablinks" onclick="openTab(event, 'social')">Social Media</button>
+    <button class="tablinks" onclick="openTab(event, 'about')">About</button>
+  </div>
+
+  <div id="experience" class="tabcontent" style="display: block;">
+    <h3>Experience</h3>
+    <ul>
+      <li> Software Engineer III @JPMorgan & Chase Co. in NYC, USA <em> May 2023 - Present </em> 
+        <ul>
+          <li>
+            Working on product team in Consumer and Community Banking providing experience to millions of users. 
+          </li>
+          <li>
+            Developing Microservices using Java, Springboot, AWS 
+          </li>
+          <li>
+            Deploying APIs in EKS and ECS using Jenkins and Spinnaker
+          </li>
+          <li>
+            Infrastructure provisioning using Terraform
+          </li>
+          <li>
+            Observability of APIs using Datadog, Tracing using Splunk  & Insights over log data in S3 using Athena
+          </li>
+        </ul>
+      </li>
+      </br>
+      <li>Senior Consultant-Technology for Calance in India & USA From July 2018 to May 2023</br></li>
+    </br>
+      <li>Senior Software Engineer for HTC Global Services in India From April 2015 to Jun 2018</br></li>
+    </br>
+      <li>Analyst Programmer for Decathlon Sports India From Jan 2014 to Mar 2015</br></li>
+    </br>
+      <li>Software Engineer for iGATE Global Solutions, India From Sep 2010 to Dec 2013</br></li>
+    </ul>
+  </div>
+  
+  <div id="techstack" class="tabcontent">
+    <h3>Technical Stack</h3>
+    <ul>
+      <li> Programming Languages - Java, Groovy, Python, Javascript</li>
+    </br>
+      <li> Web & Frameworks - Microservices, API First, Open API, Springboot, Hibernate </li>
+    </br>
+      <li> Tools - Docker, Jenkins, Kubernetes, Kafka, Spark </li>
+    </br>
+      <li> Cloud - AWS ECS/EKS, S3, Terraform, RDS </li>
+    </br>
+      <li> API Monitoring & Tracing - Splunk, Datadog, Athena </li>
+    </ul>
+  </div>
+  
+  <div id="projects" class="tabcontent">
+    <h3>Projects</h3>
+    
+    <a href="https://hkcodeblogs.medium.com/"> Medium Articles </a>
+    <br>
+    <a href="https://github.com/orgs/spring-lab-01/repositories"> Spring based Projects </a>
+    <br>
+    <a href="https://github.com/hkcodebase/path-aws"> AWS Cloud Learning Path </a>
+  </div>
+  
+  <div id="social" class="tabcontent">
+    <h3>Social </h3>
+    
+    <a href="https://www.linkedin.com/in/hemantk01"> LinkedIn </a>
+    <br>
+    <a href="https://twitter.com/hey_mant"> Twitter </a>
+    <br>
+    <a href="https://hkcodebase.github.io"> Github </a>
+    <br>
+    <a href="https://stackoverflow.com/users/7505731/hemant"> Stackoverflow </a>
+    
+    
+  </div>
+
+  <div id="about" class="tabcontent">
+    <h3>Architecture of this Cloud Resume site  </h3>
+    
+    <img src="resumearch.png">
+    
+    
+  </div>
+  
 </body>
 
 </html>
