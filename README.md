@@ -19,3 +19,6 @@ This repository has code for cloud resume as per challenge and steps in this art
 
 ### 5. HTTPS
 - [Resume over CloudFront](https://d371yj7u2esz45.cloudfront.net/)
+
+### 6. DNS
+- [Domain using Route53 pointing to CloudFront Distribution](https://hkcloudresume.com)
