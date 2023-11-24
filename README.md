@@ -9,7 +9,7 @@ This repository has code for cloud resume as per challenge and steps in this art
 - [AWS Cloud Practitioner Certificate](https://www.credly.com/badges/3f155c87-ee29-4a3f-b6f9-ab791a779593/)
 
 ### 2. HTML &  3. CSS
-- [Resume file](./web/index.html)
+- [Resume files](./web/)
 - [Learning Resource 1](https://internetingishard.netlify.app/) 
 - [Learning Resource 2](https://developer.mozilla.org/en-US/docs/Learn)
 
@@ -22,3 +22,27 @@ This repository has code for cloud resume as per challenge and steps in this art
 
 ### 6. DNS
 - [Domain using Route53 pointing to CloudFront Distribution](https://hkcloudresume.com)
+
+### 7. Javascript
+
+### 8. Database
+
+### 9. API
+
+### 10. Python
+
+### 11. Tests
+
+### 12. Infrastructure as Code
+
+### 13. Source Control
+ - This Repository
+
+### 14. CI/CD (Back end)
+
+### 15. CI/CD (Front end)
+ - [Github Actions]()
+ - [My Cloud Resume CI/CD](https://github.com/hkcodebase/cloud-resume-aws/blob/main/.github/workflows/aws.yml)
+
+### 16. Blog post
+ - [Cloud Resume V1 on Medium](https://medium.com/@hkcodeblogs/cloud-resume-using-aws-services-part-1-69e000894f73)
