@@ -29,6 +29,13 @@ This repository has code for cloud resume as per challenge and steps in this art
 
 ### 9. API
 
+Built using Spring boot and DynamoDB. Deployed in AWS EC2
+```
+cd backend
+docker build -t hkchauhan022/cloud-resume .
+docker run -p 8080:8080 hkchauhan022/cloud-resume
+```
+
 ### 10. Python
 
 ### 11. Tests

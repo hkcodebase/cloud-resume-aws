@@ -26,5 +26,6 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
-  }
+  },
+  "proxy":"http://cloud-resume-alb-1685217853.us-east-1.elb.amazonaws.com"
 }
