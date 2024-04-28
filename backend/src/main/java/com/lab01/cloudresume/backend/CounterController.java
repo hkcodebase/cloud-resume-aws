@@ -6,19 +6,22 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collections;
 
-@CrossOrigin(origins = "https://hkcloudresume.com/")
+@CrossOrigin(origins = "https://hkcloudresume.com/", maxAge = 3600)
 @RestController
 @RequestMapping("/counter")
 public class CounterController {
 
-    @Autowired
-    DynamoDBService counterService;
+
+    private final DynamoDBService dynamoDBService;
+
+    public CounterController(DynamoDBService counterService) {
+        this.dynamoDBService = counterService;
+    }
 
     @GetMapping
     public int increment() {
-        return counterService.getCounter();
+        return dynamoDBService.getCounter();
     }
 
 }

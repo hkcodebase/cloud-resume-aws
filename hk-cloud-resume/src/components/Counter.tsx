@@ -5,14 +5,16 @@ export default function Counter() {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        load()
-    }); // Empty array means this effect runs once on mount
+        fetch('http://localhost:8080/counter',{method:"GET"})
+            .then(response => response.json())
+            .then(data => setCount(data));
+    }, []); // Empty array means this effect runs once on mount
 
-    const load = async () => {
-         fetch('https://backend.hkcloudresume.com/counter')
-             .then(response => response.json())
-             .then(data => setCount(data));
-    };
+
+         //fetch('https://backend.hkcloudresume.com/counter')
+
+
+
 
     return (
     <div>
