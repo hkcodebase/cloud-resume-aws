@@ -9,7 +9,7 @@ export default function Counter() {
     }); // Empty array means this effect runs once on mount
 
     const load = async () => {
-         fetch('http://backend.hkcloudresume.com/counter')
+         fetch('https://backend.hkcloudresume.com/counter')
              .then(response => response.json())
              .then(data => setCount(data));
     };
