@@ -5,7 +5,7 @@ export default function Counter() {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        fetch('https://backend.hkcloudresume.com/counter',{method:"GET"})
+        fetch('https://backend.hkcloudresume.com/cloudresume-dev/counter',{method:"GET"})
             .then(response => response.json())
             .then(data => setCount(data));
     }, []); // Empty array means this effect runs once on mount
