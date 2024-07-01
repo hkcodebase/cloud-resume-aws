@@ -6,6 +6,10 @@ export default function RecentBlogs(){
             <h4>Recent Blogs at Medium</h4>
             <List>
                 <ListInlineItem>
+                    <a href="https://medium.com/@hkcodeblogs/deploy-a-spring-boot-application-to-aws-ecs-91742a32a5f1" target={"_blank"}>
+                        Deploy Spring boot application to AWS ECS</a>
+                </ListInlineItem>
+                <ListInlineItem>
                     <a href="https://hkcodeblogs.medium.com/cloud-resume-using-aws-services-part-1-69e000894f73" target={"_blank"}>
                         Hosting Cloud Resume over AWS</a>
                 </ListInlineItem>
