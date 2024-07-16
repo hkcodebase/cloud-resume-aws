@@ -24,26 +24,23 @@ This repository has code for [**my cloud resume website**](https://hkcloudresume
 - [Domain using Route53 pointing to CloudFront Distribution](https://hkcloudresume.com)
 
 ### 7. Javascript
+- [React Component to get Counter from AWS](https://github.com/hkcodebase/cloud-resume-aws/blob/main/frontend/src/components/Counter.tsx)
 
 ### 8. Database
+- [Dynamo DB](https://aws.amazon.com/dynamodb/) table to keep site visitor counts.
 
 ### 9. API
-
-Built using Spring boot and DynamoDB. Deployed in AWS EC2
-```
-cd backend
-docker build -t hkchauhan022/cloud-resume .
-docker run -p 8080:8080 hkchauhan022/cloud-resume
-```
+ - [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html) to create API to increment site visits and get that value
 
 ### 10. Python
+- [API Backend](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html) to get and put site visit values to database
 
 ### 11. Tests
 
 ### 12. Infrastructure as Code
 
 ### 13. Source Control
- - This Repository
+ - [This Repository](https://github.com/hkcodebase/cloud-resume-aws)
 
 ### 14. CI/CD (Back end)
 
