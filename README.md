@@ -1,6 +1,6 @@
 # cloud-resume-aws
-This repository has code for [**my cloud resume website**](https://hkcloudresume.com/) as per challenge and steps in this article 
- https://cloudresumechallenge.dev/docs/the-challenge/aws/
+This repository has code for [**my cloud resume website**](https://hkcloudresume.com/) as per challenge and steps in [this article]( 
+ https://cloudresumechallenge.dev/docs/the-challenge/aws/)
 
 ## Steps of Challenge
 
