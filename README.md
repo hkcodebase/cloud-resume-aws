@@ -14,14 +14,14 @@ This repository has code for [**my cloud resume website**](https://hkcloudresume
 - [Learning Resource 2](https://developer.mozilla.org/en-US/docs/Learn)
 
 ### 4. Static Website on AWS S3
-- [Resume URL over S3](http://hk-cloud-resume.s3-website-us-east-1.amazonaws.com/)
+- [Use S3 to host resume website](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-cloudfront-overview.html)
 - [Steps to create it](https://github.com/hkcodebase/path-aws/blob/main/s3/cloud-resume.md)
 
 ### 5. HTTPS
-- [Resume over CloudFront](https://d371yj7u2esz45.cloudfront.net/)
+- [Enable HTTPS Using AWS Certificate Manger](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cnames-and-https-requirements.html)
 
 ### 6. DNS
-- [Domain using Route53 pointing to CloudFront Distribution](https://hkcloudresume.com)
+- [Pointing Domain to CloudFront Distribution using Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-cloudfront-distribution.html)
 
 ### 7. Javascript
 - [React Component to get Counter from AWS](https://github.com/hkcodebase/cloud-resume-aws/blob/main/frontend/src/components/Counter.tsx)
