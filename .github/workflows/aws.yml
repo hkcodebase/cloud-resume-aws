@@ -35,4 +35,4 @@ jobs:
         aws-region: ${{ env.AWS_REGION }}
 
     - name: Push resume files with S3
-      run: aws s3 cp web/. s3://hk-cloud-resume/ --recursive
+      run: aws s3 cp s3-files/. s3://hk-cloud-resume/ --recursive
