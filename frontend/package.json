@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && Xcopy dist\\ ..\\web\\ /E",
+    "build": "tsc && vite build && cp -r dist/ ../s3-files/",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

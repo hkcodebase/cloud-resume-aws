@@ -1,3 +1,19 @@
+## Steps to run frontend
+
+1. Install node modules 
+- ```npm install```
+2. Run in local 
+- ```npm run dev```
+- Verify at http://localhost:5173/ ```
+3. Build 
+- ```npm run build```
+
+## ** For build in windows
+ Change in package.json
+ ```terminal
+  "build": "tsc && vite build && Xcopy dist\\ ..\\s3-files\\ /E" 
+ ```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
