@@ -3,8 +3,12 @@ import {List, ListInlineItem} from "reactstrap";
 export default function RecentBlogs(){
     return(
         <>
-            <h4>Recent Blogs at Medium</h4>
+            <h4>Recent code blogs at Medium <a href="https://hkcodeblogs.medium.com" target={"_blank"}>(hkcodeblogs)</a></h4>
             <List>
+                <ListInlineItem>
+                    <a href="https://hkcodeblogs.medium.com/cloud-resume-using-aws-services-part-1-69e000894f73" target={"_blank"}>
+                        Host Portfolio website over AWS</a>
+                </ListInlineItem>
                 <ListInlineItem>
                     <a href="https://hkcodeblogs.medium.com/rest-apis-using-springboot-3-userbook-application-43df796f69fd" target={"_blank"}>
                         Develop REST Based Microservice using Springboot
@@ -24,8 +28,8 @@ export default function RecentBlogs(){
                         Deploy Spring boot application to AWS ECS</a>
                 </ListInlineItem>
                 <ListInlineItem>
-                    <a href="https://hkcodeblogs.medium.com/cloud-resume-using-aws-services-part-1-69e000894f73" target={"_blank"}>
-                        Cloud Resume over AWS</a>
+                    <a href="https://hkcodeblogs.medium.com/upgrade-springboot-applications-to-latest-version-in-10-minutes-9bd141d02498" target={"_blank"}>
+                        Migrate old version applications to JDK 21 and Springboot 3.3</a>
                 </ListInlineItem>
             </List>
         </>
