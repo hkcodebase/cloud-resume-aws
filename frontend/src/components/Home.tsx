@@ -7,7 +7,7 @@ import RecentBlogs from "./RecentBlogs.tsx";
 export default function Home() {
     return (
         <>
-            <h1>Hemant Kumar </h1>
+            <h3>Hemant Kumar </h3>
             <ConnectWithMe/>
             <AboutMe/>
             <Projects/>
