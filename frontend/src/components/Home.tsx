@@ -7,15 +7,11 @@ import RecentBlogs from "./RecentBlogs.tsx";
 export default function Home() {
     return (
         <>
-            <p>
-                <h2>Hemant Kumar</h2>
-                <ConnectWithMe/>
-            </p>
-
+            <h1>Hemant Kumar </h1>
+            <ConnectWithMe/>
             <AboutMe/>
             <Projects/>
             <RecentBlogs/>
-            {/*<Counter/>*/}
         </>
     )
 }

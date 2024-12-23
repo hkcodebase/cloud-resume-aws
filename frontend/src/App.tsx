@@ -1,10 +1,18 @@
 import './App.css'
 import Home from "./components/Home.tsx";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Counter from "./components/Counter.tsx";
+import React from "react";
 
-function App() {
+const App: React.FC = () => {
     return (
-        <Home/>
-    )
-}
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/xdsgghd-ap-i0insight" element={<Counter />} />
+            </Routes>
+        </BrowserRouter>
+    );
+};
 
-export default App
+export default App;
