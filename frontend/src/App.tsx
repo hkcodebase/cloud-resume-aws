@@ -1,7 +1,7 @@
 import './App.css'
 import Home from "./components/Home.tsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Counter from "./components/Counter.tsx";
+// import Counter from "./components/Counter.tsx";
 import React from "react";
 
 const App: React.FC = () => {
@@ -9,7 +9,7 @@ const App: React.FC = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/xdsgghd-ap-i0insight" element={<Counter />} />
+                {/*<Route path="/xdsgghd-ap-i0insight" element={<Counter />} />*/}
             </Routes>
         </BrowserRouter>
     );

@@ -2,7 +2,6 @@ import AboutMe from "./AboutMe.tsx";
 import ConnectWithMe from "./ConnectWithMe.tsx";
 import Projects from "./Projects.tsx";
 import RecentBlogs from "./RecentBlogs.tsx";
-import Counter from "./Counter.tsx";
 // import Counter from "./Counter.tsx";
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
             <AboutMe/>
             <Projects/>
             <RecentBlogs/>
-            <Counter/>
+            {/*<Counter/>*/}
         </>
     )
 }
